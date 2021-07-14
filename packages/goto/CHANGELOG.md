@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.1](https://github.com/microlinkhq/browserless/compare/v9.1.0...v9.1.1) (2021-07-06)
+
+**Note:** Version bump only for package @browserless/goto
+
+
+
+
+
+# [9.1.0](https://github.com/microlinkhq/browserless/compare/v9.0.4...v9.1.0) (2021-07-03)
+
+
+### Features
+
+* simplify scrolling ([6da9c7b](https://github.com/microlinkhq/browserless/commit/6da9c7b1304068dc9424e16d8a0b97070c8f3c39))
+
+
+
+
+
+## [9.0.4](https://github.com/microlinkhq/browserless/compare/v9.0.3...v9.0.4) (2021-07-02)
+
+**Note:** Version bump only for package @browserless/goto
+
+
+
+
+
+## [9.0.3](https://github.com/microlinkhq/browserless/compare/v9.0.2...v9.0.3) (2021-07-02)
+
+**Note:** Version bump only for package @browserless/goto
+
+
+
+
+
+## [9.0.1](https://github.com/microlinkhq/browserless/compare/v9.0.0...v9.0.1) (2021-06-26)
+
+**Note:** Version bump only for package @browserless/goto
+
+
+
+
+
+## [8.8.14](https://github.com/microlinkhq/browserless/compare/v8.8.13...v8.8.14) (2021-05-05)
+
+**Note:** Version bump only for package @browserless/goto
+
+
+
+
+
+## [8.8.11](https://github.com/microlinkhq/browserless/compare/v8.8.10...v8.8.11) (2021-04-24)
+
+**Note:** Version bump only for package @browserless/goto
+
+
+
+
+
+## [8.8.10](https://github.com/microlinkhq/browserless/compare/v8.8.9...v8.8.10) (2021-04-23)
+
+**Note:** Version bump only for package @browserless/goto
+
+
+
+
+
 ## [8.8.7](https://github.com/microlinkhq/browserless/compare/v8.8.6...v8.8.7) (2021-04-15)
 
 **Note:** Version bump only for package @browserless/goto

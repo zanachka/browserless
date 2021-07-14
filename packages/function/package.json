@@ -2,12 +2,12 @@
   "name": "@browserless/function",
   "description": "Run abritrary JavaScript inside a browser sandbox",
   "homepage": "https://browserless.js.org",
-  "version": "8.8.9",
+  "version": "9.0.3",
   "main": "src/index.js",
   "author": {
-    "email": "josefrancisco.verdu@gmail.com",
-    "name": "Kiko Beats",
-    "url": "https://kikobeats.com"
+    "email": "hello@microlink.io",
+    "name": "microlink.io",
+    "url": "https://microlink.io"
   },
   "repository": {
     "directory": "packages/function",
@@ -29,12 +29,13 @@
     "serverless"
   ],
   "dependencies": {
-    "@browserless/errors": "^8.8.8",
+    "@browserless/errors": "^9.0.3",
     "debug-logfmt": "~1.0.4",
-    "execa": "~5.0.0",
+    "deepmerge": "~4.2.2",
+    "execa": "~5.1.1",
     "p-event": "~4.2.0",
     "p-reflect": "~2.1.0",
-    "p-retry": "~4.5.0",
+    "p-retry": "~4.6.0",
     "p-timeout": "~4.1.0",
     "require-one-of": "~1.0.15",
     "serialize-error": "~8.1.0",
@@ -52,7 +53,11 @@
     "src"
   ],
   "scripts": {
-    "test": "ava"
+    "test": "NODE_ENV=test ava"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "ava": {
+    "timeout": "2m",
+    "verbose": true
+  }
 }

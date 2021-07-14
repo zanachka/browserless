@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.3](https://github.com/microlinkhq/browserless/compare/v9.0.2...v9.0.3) (2021-07-02)
+
+**Note:** Version bump only for package @browserless/function
+
+
+
+
+
+## [9.0.1](https://github.com/microlinkhq/browserless/compare/v9.0.0...v9.0.1) (2021-06-26)
+
+
+### Bug Fixes
+
+* p-retry retry value is called retries ([78c1a1e](https://github.com/microlinkhq/browserless/commit/78c1a1e3f6e7b9a92f723125acbad9bd8c18b7f5))
+
+
+
+
+
+## [8.8.10](https://github.com/microlinkhq/browserless/compare/v8.8.9...v8.8.10) (2021-04-23)
+
+
+### Bug Fixes
+
+* linter ([5710889](https://github.com/microlinkhq/browserless/commit/5710889d70f965dea2ea95caa7190ddeeaf9b0a1))
+
+
+
+
+
 ## [8.8.9](https://github.com/microlinkhq/browserless/compare/v8.8.8...v8.8.9) (2021-04-21)
 
 

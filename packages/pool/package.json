@@ -2,7 +2,7 @@
   "name": "@browserless/pool",
   "description": "Pooling support for browserless",
   "homepage": "https://browserless.js.org/#/?id=pool-of-instances",
-  "version": "8.8.7",
+  "version": "9.1.2",
   "main": "src",
   "repository": {
     "directory": "packages/pool",
@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "debug-logfmt": "~1.0.4",
-    "generic-pool": "~3.7.8",
+    "generic-pool": "~3.8.2",
     "mimic-fn": "~3.1.0"
   },
   "devDependencies": {
@@ -41,10 +41,11 @@
     "src"
   ],
   "scripts": {
-    "test": "ava"
+    "test": "NODE_ENV=test ava"
   },
   "license": "MIT",
   "ava": {
-    "timeout": "2m"
+    "timeout": "2m",
+    "verbose": true
   }
 }

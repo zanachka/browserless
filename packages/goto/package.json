@@ -2,12 +2,12 @@
   "name": "@browserless/goto",
   "description": "Go to a page aborting unnecessary requests",
   "homepage": "https://browserless.js.org/#/?id=gotopage-options",
-  "version": "8.8.7",
+  "version": "9.1.1",
   "main": "src/index.js",
   "author": {
-    "email": "josefrancisco.verdu@gmail.com",
-    "name": "Kiko Beats",
-    "url": "https://kikobeats.com"
+    "email": "hello@microlink.io",
+    "name": "microlink.io",
+    "url": "https://microlink.io"
   },
   "repository": {
     "directory": "packages/goto",
@@ -29,18 +29,18 @@
     "puppeteer"
   ],
   "dependencies": {
-    "@browserless/devices": "^8.8.2",
-    "@cliqz/adblocker-puppeteer": "~1.20.4",
+    "@browserless/devices": "^9.0.4",
+    "@cliqz/adblocker-puppeteer": "~1.22.2",
     "debug-logfmt": "~1.0.4",
     "got": "~11.8.2",
-    "is-url-http": "~2.2.3",
+    "is-url-http": "~2.2.4",
     "p-reflect": "~2.1.0",
     "p-timeout": "~4.1.0",
     "pretty-ms": "~7.0.1",
     "shallow-equal": "~1.2.1",
     "time-span": "~4.0.0",
-    "tldts": "~5.7.25",
-    "top-user-agents": "~1.0.24",
+    "top-user-agents": "~1.0.29",
+    "tough-cookie": "~4.0.0",
     "unique-random-array": "~2.0.0"
   },
   "devDependencies": {
@@ -58,13 +58,14 @@
   ],
   "scripts": {
     "postinstall": "node scripts/postinstall",
-    "test": "ava"
+    "test": "NODE_ENV=test ava"
   },
   "license": "MIT",
   "ava": {
     "files": [
       "!test/fixtures"
     ],
-    "timeout": "2m"
+    "timeout": "2m",
+    "verbose": true
   }
 }

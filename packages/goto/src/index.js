@@ -5,7 +5,7 @@ const { PuppeteerBlocker } = require('@cliqz/adblocker-puppeteer')
 const debug = require('debug-logfmt')('browserless:goto')
 const { shallowEqualObjects } = require('shallow-equal')
 const createDevices = require('@browserless/devices')
-const { getDomain } = require('tldts')
+const toughCookie = require('tough-cookie')
 const prettyMs = require('pretty-ms')
 const pReflect = require('p-reflect')
 const timeSpan = require('time-span')
@@ -39,83 +39,25 @@ const injectCSS = (page, css) =>
     })
   )
 
-const scrollTo = (element, options) => {
-  const isOverflown = element => {
-    return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth
-  }
+const parseCookies = (url, str) =>
+  str.split(';').reduce((acc, cookieStr) => {
+    const jar = new toughCookie.CookieJar(undefined, { rejectPublicSuffixes: false })
+    jar.setCookieSync(cookieStr.trim(), url)
+    const parsedCookie = jar.serializeSync().cookies[0]
 
-  const findScrollParent = element => {
-    if (element === undefined) {
-      return
+    // Use this instead of the above when the following issue is fixed:
+    // https://github.com/salesforce/tough-cookie/issues/149
+    // const ret = toughCookie.parse(cookie).serializeSync();
+
+    parsedCookie.name = parsedCookie.key
+    delete parsedCookie.key
+
+    if (parsedCookie.expires) {
+      parsedCookie.expires = Math.floor(new Date(parsedCookie.expires) / 1000)
     }
 
-    if (isOverflown(element)) {
-      return element
-    }
-
-    return findScrollParent(element.parentElement)
-  }
-
-  const calculateOffset = (rect, options) => {
-    if (options === undefined) {
-      return {
-        x: rect.left,
-        y: rect.top
-      }
-    }
-
-    const offset = options.offset || 0
-
-    switch (options.offsetFrom) {
-      case 'top':
-        return {
-          x: rect.left,
-          y: rect.top + offset
-        }
-      case 'right':
-        return {
-          x: rect.left - offset,
-          y: rect.top
-        }
-      case 'bottom':
-        return {
-          x: rect.left,
-          y: rect.top - offset
-        }
-      case 'left':
-        return {
-          x: rect.left + offset,
-          y: rect.top
-        }
-      default:
-        throw new Error('Invalid `scroll.offsetFrom` value')
-    }
-  }
-
-  const rect = element.getBoundingClientRect()
-  const offset = calculateOffset(rect, options)
-  const parent = findScrollParent(element)
-
-  if (parent !== undefined) {
-    parent.scrollIntoView(true)
-    parent.scroll(offset.x, offset.y)
-  }
-}
-
-const parseCookies = (url, str) => {
-  const domain = `.${getDomain(url)}`
-  return str.split(';').reduce((acc, str) => {
-    const [name, value] = str.split('=')
-    const cookie = {
-      name: name.trim(),
-      value,
-      domain,
-      url,
-      path: '/'
-    }
-    return [...acc, cookie]
+    return [...acc, parsedCookie]
   }, [])
-}
 
 const getMediaFeatures = ({ animations, colorScheme }) => {
   const prefers = []
@@ -270,7 +212,7 @@ module.exports = ({
         prePromises.push(
           run({
             fn: page.setCookie(...cookies),
-            debug: ['cookies', ...cookies]
+            debug: ['cookies', ...cookies.map(({ name }) => name)]
           })
         )
       }
@@ -381,14 +323,10 @@ module.exports = ({
     }
 
     if (scroll) {
-      if (typeof scroll === 'object') {
-        await run({
-          fn: page.$eval(scroll.element, scrollTo, scroll),
-          debug: { scroll }
-        })
-      } else {
-        await run({ fn: page.$eval(scroll, scrollTo), debug: { scroll } })
-      }
+      await run({
+        fn: page.$eval(scroll, el => el.scrollIntoView()),
+        debug: { scroll }
+      })
     }
 
     if (isWaitUntilAuto) await waitUntilAuto(page, { response: value, timeout })

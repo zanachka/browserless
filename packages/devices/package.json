@@ -2,12 +2,12 @@
   "name": "@browserless/devices",
   "description": "A collection of different devices for emulation purposes",
   "homepage": "https://browserless.js.org/#/?id=devices",
-  "version": "8.8.2",
+  "version": "9.0.4",
   "main": "src/index.js",
   "author": {
-    "email": "josefrancisco.verdu@gmail.com",
-    "name": "Kiko Beats",
-    "url": "https://kikobeats.com"
+    "email": "hello@microlink.io",
+    "name": "microlink.io",
+    "url": "https://microlink.io"
   },
   "repository": {
     "directory": "packages/devices",
@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "didyoumean3": "~1.2.5",
-    "memoize-one": "~5.1.1",
+    "memoize-one": "~5.2.1",
     "require-one-of": "~1.0.15"
   },
   "devDependencies": {
@@ -44,10 +44,11 @@
     "src"
   ],
   "scripts": {
-    "test": "ava"
+    "test": "NODE_ENV=test ava"
   },
   "license": "MIT",
   "ava": {
-    "timeout": "2m"
+    "timeout": "2m",
+    "verbose": true
   }
 }

@@ -3,6 +3,118 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.3](https://github.com/microlinkhq/browserless/compare/v9.1.2...v9.1.3) (2021-07-13)
+
+**Note:** Version bump only for package @browserless/cli
+
+
+
+
+
+## [9.1.2](https://github.com/microlinkhq/browserless/compare/v9.1.1...v9.1.2) (2021-07-13)
+
+**Note:** Version bump only for package @browserless/cli
+
+
+
+
+
+## [9.1.1](https://github.com/microlinkhq/browserless/compare/v9.1.0...v9.1.1) (2021-07-06)
+
+**Note:** Version bump only for package @browserless/cli
+
+
+
+
+
+# [9.1.0](https://github.com/microlinkhq/browserless/compare/v9.0.4...v9.1.0) (2021-07-03)
+
+**Note:** Version bump only for package @browserless/cli
+
+
+
+
+
+## [9.0.4](https://github.com/microlinkhq/browserless/compare/v9.0.3...v9.0.4) (2021-07-02)
+
+**Note:** Version bump only for package @browserless/cli
+
+
+
+
+
+## [9.0.3](https://github.com/microlinkhq/browserless/compare/v9.0.2...v9.0.3) (2021-07-02)
+
+**Note:** Version bump only for package @browserless/cli
+
+
+
+
+
+## [9.0.1](https://github.com/microlinkhq/browserless/compare/v9.0.0...v9.0.1) (2021-06-26)
+
+**Note:** Version bump only for package @browserless/cli
+
+
+
+
+
+## [8.8.17](https://github.com/microlinkhq/browserless/compare/v8.8.16...v8.8.17) (2021-05-09)
+
+**Note:** Version bump only for package @browserless/cli
+
+
+
+
+
+## [8.8.16](https://github.com/microlinkhq/browserless/compare/v8.8.15...v8.8.16) (2021-05-07)
+
+**Note:** Version bump only for package @browserless/cli
+
+
+
+
+
+## [8.8.15](https://github.com/microlinkhq/browserless/compare/v8.8.14...v8.8.15) (2021-05-07)
+
+**Note:** Version bump only for package @browserless/cli
+
+
+
+
+
+## [8.8.14](https://github.com/microlinkhq/browserless/compare/v8.8.13...v8.8.14) (2021-05-05)
+
+**Note:** Version bump only for package @browserless/cli
+
+
+
+
+
+## [8.8.13](https://github.com/microlinkhq/browserless/compare/v8.8.12...v8.8.13) (2021-05-03)
+
+**Note:** Version bump only for package @browserless/cli
+
+
+
+
+
+## [8.8.11](https://github.com/microlinkhq/browserless/compare/v8.8.10...v8.8.11) (2021-04-24)
+
+**Note:** Version bump only for package @browserless/cli
+
+
+
+
+
+## [8.8.10](https://github.com/microlinkhq/browserless/compare/v8.8.9...v8.8.10) (2021-04-23)
+
+**Note:** Version bump only for package @browserless/cli
+
+
+
+
+
 ## [8.8.8](https://github.com/microlinkhq/browserless/compare/v8.8.7...v8.8.8) (2021-04-20)
 
 **Note:** Version bump only for package @browserless/cli

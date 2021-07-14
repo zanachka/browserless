@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.4](https://github.com/microlinkhq/browserless/compare/v9.1.3...v9.1.4) (2021-07-14)
+
+**Note:** Version bump only for package @browserless/lighthouse
+
+
+
+
+
+## [9.0.3](https://github.com/microlinkhq/browserless/compare/v9.0.2...v9.0.3) (2021-07-02)
+
+**Note:** Version bump only for package @browserless/lighthouse
+
+
+
+
+
+## [9.0.2](https://github.com/microlinkhq/browserless/compare/v9.0.1...v9.0.2) (2021-06-26)
+
+
+### Bug Fixes
+
+* serialize error between processes ([cb347ac](https://github.com/microlinkhq/browserless/commit/cb347acda30c9d484a94e40a65a15af6199cc9a8))
+
+
+
+
+
+## [9.0.1](https://github.com/microlinkhq/browserless/compare/v9.0.0...v9.0.1) (2021-06-26)
+
+
+### Bug Fixes
+
+* p-retry retry value is called retries ([78c1a1e](https://github.com/microlinkhq/browserless/commit/78c1a1e3f6e7b9a92f723125acbad9bd8c18b7f5))
+
+
+
+
+
+## [8.8.12](https://github.com/microlinkhq/browserless/compare/v8.8.11...v8.8.12) (2021-05-02)
+
+**Note:** Version bump only for package @browserless/lighthouse
+
+
+
+
+
 ## [8.8.8](https://github.com/microlinkhq/browserless/compare/v8.8.7...v8.8.8) (2021-04-20)
 
 **Note:** Version bump only for package @browserless/lighthouse

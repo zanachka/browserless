@@ -57,10 +57,10 @@ module.exports = ({ goto, ...gotoOpts }) => {
   ) => {
     let screenshot
     let response
-
     const beforeScreenshot = response =>
       pReflect(
         Promise.all([
+          page.evaluate(() => document.fonts.ready),
           waitForPrism(page, response, { codeScheme, ...opts }),
           pTimeout(waitForImagesOnViewport(page, { timeout }), timeout)
         ])
@@ -102,6 +102,6 @@ module.exports = ({ goto, ...gotoOpts }) => {
 
     return Object.keys(overlayOpts).length === 0
       ? screenshot
-      : overlay(screenshot, { ...opts, ...overlayOpts })
+      : overlay(screenshot, { ...opts, ...overlayOpts, viewport: page.viewport() })
   }
 }

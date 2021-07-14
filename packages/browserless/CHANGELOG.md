@@ -3,6 +3,127 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.3](https://github.com/microlinkhq/browserless/compare/v9.1.2...v9.1.3) (2021-07-13)
+
+**Note:** Version bump only for package browserless
+
+
+
+
+
+## [9.1.2](https://github.com/microlinkhq/browserless/compare/v9.1.1...v9.1.2) (2021-07-13)
+
+**Note:** Version bump only for package browserless
+
+
+
+
+
+## [9.1.1](https://github.com/microlinkhq/browserless/compare/v9.1.0...v9.1.1) (2021-07-06)
+
+**Note:** Version bump only for package browserless
+
+
+
+
+
+# [9.1.0](https://github.com/microlinkhq/browserless/compare/v9.0.4...v9.1.0) (2021-07-03)
+
+**Note:** Version bump only for package browserless
+
+
+
+
+
+## [9.0.4](https://github.com/microlinkhq/browserless/compare/v9.0.3...v9.0.4) (2021-07-02)
+
+**Note:** Version bump only for package browserless
+
+
+
+
+
+## [9.0.3](https://github.com/microlinkhq/browserless/compare/v9.0.2...v9.0.3) (2021-07-02)
+
+**Note:** Version bump only for package browserless
+
+
+
+
+
+## [9.0.1](https://github.com/microlinkhq/browserless/compare/v9.0.0...v9.0.1) (2021-06-26)
+
+**Note:** Version bump only for package browserless
+
+
+
+
+
+## [8.8.17](https://github.com/microlinkhq/browserless/compare/v8.8.16...v8.8.17) (2021-05-09)
+
+
+### Bug Fixes
+
+* ensure to resolve default args ([c8594c6](https://github.com/microlinkhq/browserless/commit/c8594c60aa5b692d09841aa931f5d0b72a2ed540))
+
+
+
+
+
+## [8.8.16](https://github.com/microlinkhq/browserless/compare/v8.8.15...v8.8.16) (2021-05-07)
+
+
+### Reverts
+
+* Revert "fix: ensure to close page" ([07017d8](https://github.com/microlinkhq/browserless/commit/07017d85676759a89d787fe0a65be2f3081c6953))
+
+
+
+
+
+## [8.8.15](https://github.com/microlinkhq/browserless/compare/v8.8.14...v8.8.15) (2021-05-07)
+
+
+### Bug Fixes
+
+* ensure to close page ([ce76075](https://github.com/microlinkhq/browserless/commit/ce76075c859da3b9e4a105031b7e239adad80630))
+
+
+
+
+
+## [8.8.14](https://github.com/microlinkhq/browserless/compare/v8.8.13...v8.8.14) (2021-05-05)
+
+**Note:** Version bump only for package browserless
+
+
+
+
+
+## [8.8.13](https://github.com/microlinkhq/browserless/compare/v8.8.12...v8.8.13) (2021-05-03)
+
+**Note:** Version bump only for package browserless
+
+
+
+
+
+## [8.8.11](https://github.com/microlinkhq/browserless/compare/v8.8.10...v8.8.11) (2021-04-24)
+
+**Note:** Version bump only for package browserless
+
+
+
+
+
+## [8.8.10](https://github.com/microlinkhq/browserless/compare/v8.8.9...v8.8.10) (2021-04-23)
+
+**Note:** Version bump only for package browserless
+
+
+
+
+
 ## [8.8.8](https://github.com/microlinkhq/browserless/compare/v8.8.7...v8.8.8) (2021-04-20)
 
 **Note:** Version bump only for package browserless
